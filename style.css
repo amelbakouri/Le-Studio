@@ -34,6 +34,7 @@ button{
     --bs-navbar-padding-y: 0rem!important;
     margin-top: -10px !important;
     line-height: 45px;
+    z-index: 5 !important;
 } 
 
 
@@ -80,6 +81,7 @@ button{
   nav, a{
       color: aliceblue !important;
   }
+  
   .navbar-brand{
       padding: 0 !important;
   }
