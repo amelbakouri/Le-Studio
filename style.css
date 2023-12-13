@@ -4,3 +4,103 @@
     box-sizing: border-box;
 }
 
+
+nav{
+    color: white;
+}
+
+nav a{
+    color: white!important;
+}
+
+button{
+    z-index: 5;
+}
+
+#logo{
+    width: 9rem;
+    margin-top: 10px;
+}
+
+.nav-link.active{
+    background-color: #caad68 !important;
+}
+
+.collapse{
+    justify-content : space-around !important;
+    
+}
+ .navbar{
+    --bs-navbar-padding-y: 0rem!important;
+    margin-top: -10px !important;
+    line-height: 45px;
+} 
+
+
+.lang{
+    height: 35px !important;
+    width: 25px !important;
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    background-color: #caad68 ;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -10px;
+    text-decoration: underline;
+    font-size: 10px;
+    font-weight: 600 !important;
+    color: black;
+   
+  }
+
+
+  /* caroussel */
+
+  #slider {
+    z-index: -1;
+  }
+  .carousel-inner{
+      height: 100vh !important ;
+  }
+  .carousel-indicators button {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+    border: aliceblue 2px solid !important;
+    background-color: transparent !important;
+  }
+  
+  .carousel-indicators button.active {
+    background-color: aliceblue !important;
+  }
+  
+  .navbar{
+      padding: 0 !important;
+  }
+  
+  nav, a{
+      color: aliceblue !important;
+  }
+  .navbar-brand{
+      padding: 0 !important;
+  }
+  
+  .carousel-caption {
+     transform: translatey(-50%);
+   
+  }
+  .carousel-caption h5{
+      font-size: 30px;
+      padding-top: 100px;
+  }
+  
+  .carousel-caption button{
+      font-size: 20px;
+      color: aliceblue;
+      font-weight: 600;
+      padding: 10px;
+      border: 2px aliceblue solid;
+      background-color: transparent;
+      margin-top: 80px;
+  }
+  
+
