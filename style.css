@@ -1,108 +1,101 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.m-t-10-minus{
+    margin-top: -10px !important;
 }
 
-
-nav{
-    color: white;
+.line-h-45{
+    line-height: 45px;
 }
 
-nav a{
-    color: white!important;
+.bg-gold{
+    background-color: #caad68;
 }
 
-button{
-    z-index: 5;
+.fs-10{
+    font-size: 10px;
 }
 
-#logo{
-    width: 9rem;
-    margin-top: 10px;
+.fs-20{
+    font-size: 20px;
 }
 
-.nav-link.active{
+.border-aliceblue{
+    border: aliceblue 2px solid !important;
+}
+
+.nav-item:hover{
+    background-color: #caad68;
+}
+
+.nav-link.active {
     background-color: #caad68 !important;
 }
 
-.collapse{
-    justify-content : space-around !important;
-    
-}
- .navbar{
-    --bs-navbar-padding-y: 0rem!important;
-    margin-top: -10px !important;
-    line-height: 45px;
+.navbar {
+    --bs-navbar-padding-y: 0rem !important;
     z-index: 5 !important;
-} 
+}
 
-
-.lang{
+.lang {
     height: 35px !important;
     width: 25px !important;
     clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
-    background-color: #caad68 ;
-    text-align: center;
     line-height: 25px;
-    margin-top: -10px;
     text-decoration: underline;
-    font-size: 10px;
     font-weight: 600 !important;
-    color: black;
-   
-  }
+}
 
+/* caroussel */
 
-  /* caroussel */
-
-  #slider {
+#slider {
     z-index: -1;
-  }
-  .carousel-inner{
-      height: 100vh !important ;
-  }
-  .carousel-indicators button {
+}
+
+.carousel-inner {
+    height: 100vh !important;
+}
+
+.carousel-indicators button {
     border-radius: 50%;
     height: 10px !important;
     width: 10px !important;
     border: aliceblue 2px solid !important;
     background-color: transparent !important;
-  }
-  
-  .carousel-indicators button.active {
-    background-color: aliceblue !important;
-  }
-  
-  .navbar{
-      padding: 0 !important;
-  }
-  
-  nav, a{
-      color: aliceblue !important;
-  }
-  
-  .navbar-brand{
-      padding: 0 !important;
-  }
-  
-  .carousel-caption {
-     transform: translatey(-50%);
-   
-  }
-  .carousel-caption h5{
-      font-size: 30px;
-      padding-top: 100px;
-  }
-  
-  .carousel-caption button{
-      font-size: 20px;
-      color: aliceblue;
-      font-weight: 600;
-      padding: 10px;
-      border: 2px aliceblue solid;
-      background-color: transparent;
-      margin-top: 80px;
-  }
-  
+    z-index: 20;
+}
 
+.carousel-indicators button.active {
+    background-color: aliceblue !important;
+}
+
+.carousel-caption {
+    transform: translatey(-50%);
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.carousel-caption button {
+    font-size: 20px;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 10px;
+    border: 2px aliceblue solid;
+    background-color: transparent;
+    margin-top: 80px;
+}
+
+.line {
+    width: 200px;
+    color: #caad68;
+    border-bottom: #caad68 solid 2px;
+}
