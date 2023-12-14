@@ -52,7 +52,10 @@
     font-weight: 600 !important;
 }
 
-/* caroussel */
+.navbar a:hover{
+    background-color: #caad68;
+}
+
 
 #slider {
     z-index: -1;
