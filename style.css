@@ -3,9 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    list-style: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+.h-20{
+  height: 50px;
+}
+
+.w-4{
+  width: 4%;
+}
 
 .w-8 {
     width: 8%;
@@ -49,6 +59,18 @@
     border: aliceblue 2px solid !important;
 }
 
+a{
+  text-decoration: none !important; 
+  color: white !important;
+}
+.link:hover{
+  color: #caad68 !important;
+}
+
+.dropdown-item:hover{
+  color: #caad68 !important;
+}
+
 .nav-item:hover {
     background-color: #caad68;
 }
@@ -76,45 +98,92 @@
 }
 
 
-#slider {
-    z-index: -1;
-}
-
-.carousel-inner {
-    height: 100vh !important;
-}
-
-.carousel-indicators button {
+.carousel-caption-txt {
+    font-size: calc(12px + 1vw) !important;
+  }
+  .carousel-caption {
+    transform: translatey(-50%);
+    max-height: 35% !important;
+  }
+  .carousel-caption h5 {
+    font-size: calc(8px + 1vw) !important;
+    margin-top: calc(12px + 1vw) !important;
+  }
+  .carousel-caption button {
+    font-size: calc(5px + 1vw) !important;
+    color: aliceblue;
+    border: 2px aliceblue solid;
+    padding: calc(0.5px + 1vw) !important;
+    margin-top: calc(3px + 1vw) !important;
+  }
+  .carousel-indicators button {
     border-radius: 50%;
-    height: 10px !important;
-    width: 10px !important;
+    height: calc(5px + 0.5vw) !important;
+    width: calc(5px + 0.5vw) !important;
     border: aliceblue 2px solid !important;
     background-color: transparent !important;
-    z-index: 20;
-}
-
-.carousel-indicators button.active {
+    z-index: 5;
+    margin-bottom: 3%;
+  }
+  
+  .carousel-indicators button.active {
     background-color: aliceblue !important;
-}
+  }
 
-.carousel-caption {
-    transform: translatey(-50%);
-}
-
-.carousel-caption h5 {
-    font-size: 30px;
-    padding-top: 100px;
-}
-
-.carousel-caption button {
-    font-size: 20px;
-    color: aliceblue;
-    font-weight: 600;
-    padding: 10px;
-    border: 2px aliceblue solid;
-    margin-top: 80px;
-}
-
+  .header-presentation {
+    height: calc(100px + 15vw) !important;
+  }
+  
+  @media screen and (max-width: 655px) {
+    .carousel-caption {
+      transform: translatey(-70%);
+    }
+  
+    .carousel-caption h5 {
+      margin-bottom: 0 !important;
+    }
+    .carousel-caption button {
+      margin: 0 !important;
+    }
+      .header-presentation {
+      /* height: 60vh !important; */
+  
+    }
+  
+  }
+  
+  @media screen and (min-width: 768px) {
+    header:not(.header-presentation) {
+      height: 100vh !important;
+    }
+    /* .header-presentation {
+      height: 40vh !important;
+    } */
+    .carousel-caption button {
+      font-size: calc(12px + 1vw) !important;
+      margin-top: calc(3px + 1vw) !important;
+    }
+    .logo{
+      width: 75% !important;
+    }
+    .carousel-caption {
+      transform: translatey(-50%);
+    }
+  }
+  @media screen and (min-width: 999px) {
+    .carousel-caption h5 {
+      margin-bottom: calc(50px + 1vw) !important;
+    }
+    .carousel-indicators button {
+      margin-bottom: 3%;
+    }
+    .header-presentation {
+      height: 60vh !important;
+    }
+   
+  /* regler probleme logo */
+  
+  }
 /* section actus */
 .text-26 {
     font-size: 16px;
@@ -142,7 +211,7 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 
@@ -161,3 +230,22 @@
     font-size: 12px;
     }
     
+    .boutons{
+      gap: 10px;
+    }
+  
+    .boutons button{
+  color: aliceblue;
+   background-color: #caad68;
+   width: 45%;
+   height: 60px;
+  
+    }
+  
+    .formules.carousel-inner{
+  max-height: 50vh !important;
+    }
+  
+    .formules{
+  margin: 0 13%;
+    }
