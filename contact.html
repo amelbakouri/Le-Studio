@@ -9,9 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="validation.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -80,59 +87,108 @@
         </div>
     </header>
 
-    <div class="container row row-cols-2 m-auto  justify-content-center ">
-        <div class="contact-text col">
-            ﻿
-            <h4>NOS COORDONNÉES</h4>
-            <h5>Studio Sport & Coaching</h5>
-            <p>
-                01 Allée Marie Politzer
-                64200 Biarritz
-            </p>
-            <h5>Téléphone</h5>
+    <!-- contact -->
+    <div class="container row row-cols-lg-2 row-cols-1 m-auto justify-content-center">
+        <div class="contact-text col coordonnees-container">
+            <h4 class="fw-bold ">NOS COORDONNÉES</h4>
+            <img src="images/bg_titre.jpg" alt="">
+            <div class="coordonnes pt-5">
+                <h5>Studio Sport & Coaching</h5>
+                <p>
+                    01 Allée Marie Politzer <br />
+                    64200 Biarritz
+                </p>
+                <h5>Téléphone</h5>
 
-            05 59 47 84 18
-            <h5>Horaires</h5>
-            <p>
-                Du lundi au vendredi <br>
-                de 8h à 14h, de 16h à 21h <br>
-                Le samedi <br>
-                de 10h à 13h
-            </p>
-            <h5>Email</h5>
-            <p>
-                contact (at) studiobiarritz.com
-                ou via ce formulaire
-            </p>
+                05 59 47 84 18
+                <h5>Horaires</h5>
+                <p>
+                    Du lundi au vendredi <br>
+                    de 8h à 14h, de 16h à 21h <br>
+                    Le samedi <br>
+                    de 10h à 13h
+                </p>
+                <h5>Email</h5>
+                <p>
+                    contact (at) studiobiarritz.com
+                    ou via ce formulaire
+                </p>
+            </div>
+
         </div>
-        
-<!-- formulaire de contact -->
+
+        <!-- formulaire de contact -->
         <div class="form-all">
             <div class="titre-1 text-lg-start fw-bold ">
-                <h2 class="fw-bold m-0 p-0">FORMULAIRE DE CONTACT</h2>
+                <h2 class="fw-bold m-0 p-0 fs-24">FORMULAIRE DE CONTACT</h2>
                 <img src="images/bg_titre.jpg" alt="">
-              </div>
-        <form class="">
-            <div class="container">
-                <div class="d-flex justify-content-between flex-wrap ">
-                    <input type="text" placeholder="  votre nom"
-                        class="mt-3 col-6 text-uppercase bg-form  border-0 py-2" />
-                    <input type="text" placeholder="  votre prénom"
-                        class="mt-3 col-5 text-uppercase bg-form  border-0 py-2" />
-                    <input type="text" placeholder="  votre téléphone"
-                        class="mt-3 col-4 text-uppercase bg-form  border-0 py-2" />
-                    <input type="email" placeholder="  votre email"
-                        class="mt-3 col-7 text-uppercase bg-form  border-0 py-2" />
-                    <input type="text" placeholder="  sujet"
-                        class="mt-3 col-12 text-uppercase bg-form  border-0 py-2" />
-                    <textarea name="subject" placeholder="  votre message" style="height:200px"
-                        class="mt-3 col-12 text-uppercase bg-form  border-0 py-2"></textarea>
-                </div>
-                <button type="button" class="btn bg-gold text-white rounded-0 fw-bold w-25 h4 mt-4">ENVOYER</button>
             </div>
-        </form>
+            <form>
+                    <div class="container form-group ">
+                      <!-- row 1 -->
+                        <div class="row mt-4">
+                            <div class="col-md-7">
+                              <div class="form-group">
+                                <input type="text" placeholder="votre nom"class="form-control text-uppercase bg-form  border-0 py-2" />
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <input type="text" placeholder="votre prénom" class="form-control text-uppercase bg-form border-0 py-2" />
+                              </div>
+                            </div>
+                        
+                          </div> 
+                          <!--row 2  -->
+                          <div class="row mt-4">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <input type="tel" placeholder="votre téléphone" class="form-control text-uppercase bg-form  border-0 py-2" />
+                              </div>
+                            </div>
+                        <div class="col-md-7">
+                              <div class="form-group">
+                                <input type="email" class="form-control bg-form  border-0 py-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="VOTRE EMAIL">
+                              </div>
+                            </div> 
+                          </div>
+                          <!-- deux derniers -->
+                          <input type="text" placeholder="sujet"
+                                class="form-control mt-3 col text-uppercase bg-form  border-0 py-2" />
+                            <textarea name="subject" placeholder="votre message" style="height:200px"
+                                class="form-control mt-3 col text-uppercase bg-form  border-0 py-2"></textarea>
+<!-- dddddddddddddddddddddddddddddddddddddddddddddddddddddddd -->
+<!-- 
+                        <div class="d-flex justify-content-between flex-wrap">
+
+                            <input type="text" placeholder="  votre nom"
+                                class="form-control mt-3 col text-uppercase bg-form  border-0 py-2" />
+                            <input type="text" placeholder="  votre prénom"
+                                class="form-control mt-3 col-4 ms-3 text-uppercase bg-form  border-0 py-2" />
+                                <input type="text" placeholder="  votre téléphone"
+                                    class="form-control mt-3 col-4 text-uppercase bg-form  border-0 py-2" />
+                            <input type="email" class="form-control mt-3 col ms-3 bg-form  border-0 py-2"
+                                    id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="VOTRE EMAIL">
+                            
+                            
+                                    <input type="text" placeholder="  sujet"
+                                class="form-control mt-3 col text-uppercase bg-form  border-0 py-2" />
+                            <textarea name="subject" placeholder="  votre message" style="height:200px"
+                                class="form-control mt-3 col text-uppercase bg-form  border-0 py-2"></textarea>
+                        </div> -->
+                        <button type="button" class="btn bg-gold text-white rounded-0 fw-bold w-25 h4 mt-4">ENVOYER</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    </div>
+
+
+
+
+
+
+
 
     <section class="maps ">
         <iframe class="w-100 dark-mode"
@@ -143,7 +199,7 @@
 
     <footer class=" text-center text-lg-start text-white" style="background-color: rgba(40,40,40,255)">
         <div class="position-relative">
-            <div class=" container row row-cols-lg-6 row-cols-md-4 row-cols-2 justify-content-center vw-100">
+            <div class=" m-0 p-0 row row-cols-lg-6 row-cols-md-4 row-cols-2 justify-content-center ">
 
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="images/coach/coach_2.jpg" alt="">

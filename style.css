@@ -13,7 +13,7 @@
 }
 
 .bg-form{
-  background-color: #ededed;
+  background-color: #ededed !important;
 }
 
 .w-40{
@@ -43,11 +43,17 @@
 .fs-12 {
   font-size: 12px;
 }
+/* .fs-24{
+  font-size: 12px;
+} */
 
 .m-t-10-minus {
   margin-top: -10px !important;
 }
 
+.ms-lg-5 {
+margin-left: 5px;
+}
 .line-h-45 {
   line-height: 45px;
 }
@@ -331,3 +337,21 @@ height: 150px;
     margin: 20px 0;
     display: inline-block;}
 	.contant_box_404{ margin-top:-50px;}
+
+
+  .coordonnees-container h4, .coordonnees-container h5,  .coordonnees-container p,  .coordonnees-container {
+    max-width: 300px !important;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .coordonnees-container img{
+    width: 30% !important;
+  }
+  .coordonnees-container h5{
+   font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 5%;
+  }
+
