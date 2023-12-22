@@ -6,7 +6,24 @@
   list-style: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+.footer_li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -29px;
+  border-bottom: 3px solid white;
+  width: 21px;
+}
+
+.text-hover:hover{
+  color: #CBAC6B!important;
+}
+.footer_li:hover::before{
+  border-color:#cbac6b;
+  color: #CBAC6B!important;
+
+}
 
 .bg-form{
   background-color: #ededed !important;
@@ -45,6 +62,7 @@ a {
   --bs-navbar-padding-y: 0rem !important;
   z-index: 5 !important;
 }
+
 
 .lang {
   height: 35px !important;
@@ -92,13 +110,18 @@ a {
   background-color: white !important;
 }
 
+
 .header-presentation {
-  height: calc(100px + 15vw) !important;
+  height: calc(15vw + 30vw) !important;
+}
+.header-accueil{
+  height: calc(50px + 40vw) !important;
 }
 
-/* .test{
-  margin: 0 20% !important;
-} */
+.header-contact{
+  height: calc(15px + 30vw) !important;
+}
+
 
 @media screen and (max-width: 655px) {
   .carousel-caption {
@@ -119,16 +142,10 @@ height: 150px;
 
 }
 
+
 }
 
 @media screen and (min-width: 768px) {
-  header:not(.header-presentation) {
-    height: 100vh !important;
-  }
-
-  /* .header-presentation {
-      height: 40vh !important;
-    } */
   .carousel-caption button {
     font-size: calc(12px + 1vw) !important;
     margin-top: calc(3px + 1vw) !important;
@@ -142,8 +159,28 @@ height: 150px;
     transform: translatey(-50%);
   }
 }
-
+@media (max-width: 999px) {
+  .collapse {
+    background: #050400a3;
+    backdrop-filter: blur(5px);
+  transition: 2s;
+  }
+  .navbar{
+    font-size: 26px;
+    font-weight: 600 !important;
+    text-align:center;
+  }
+.collapse a{
+  transition: 2s;
+}
+}
 @media screen and (min-width: 999px) {
+   .header-presentation {
+    height: 60vh !important;
+  }
+  .header-accueil {
+    height: 100vh !important;
+  }
   .carousel-caption h5 {
     margin-bottom: calc(50px + 1vw) !important;
   }
@@ -152,9 +189,7 @@ height: 150px;
     margin-bottom: 3%;
   }
 
-  .header-presentation {
-    height: 60vh !important;
-  }
+ 
 
   /* regler probleme logo */
 
@@ -292,3 +327,8 @@ footer a:hover{
   margin-top: 5%;
   }
 
+
+
+.container{
+
+}

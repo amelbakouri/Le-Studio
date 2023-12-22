@@ -1,6 +1,10 @@
   .ms-23{
     margin-left: 23px;
   }
+
+  .ms-32-minus{
+    margin-left: -32px;
+  }
   
   .w-50vw{
     width: 50vw !important;
@@ -22,8 +26,8 @@
     width: 4%;
   }
   
-  .w-8 {
-    width: 8%;
+  .w-10 {
+    width: 10%;
   }
   
   .w-15p {
