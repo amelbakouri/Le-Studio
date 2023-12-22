@@ -113,8 +113,6 @@ li{
 
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
 /* Variables */
 :root {
   --font-size:1rem;
@@ -187,6 +185,7 @@ body {
     background:var(--navbar-bg-color);     
     transform: translateX(110%);
     transition: all .5s ease-in-out;
+    z-index: 5;
   }
   .show-nav .navbar__links { 
     
