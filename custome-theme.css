@@ -1,9 +1,9 @@
   .ms-23{
-    margin-left: 23px;
+    margin-left: 23px !important;
   }
 
   .ms-32-minus{
-    margin-left: -32px;
+    margin-left: -32px !important;
   }
   
   .w-50vw{
@@ -18,32 +18,32 @@
     width: 40% !important;
   }
   
-  .h-20 {
-    height: 50px;
+  .h-50px {
+    height: 50px !important;
   }
   
   .w-4 {
-    width: 4%;
+    width: 4% !important;
   }
   
   .w-10 {
-    width: 10%;
+    width: 10% !important;
   }
   
   .w-15p {
-    width: 15px;
+    width: 15px !important;
   }
   
   .h-2p {
-    height: 2px;
+    height: 2px !important;
   }
   
   .fs-12 {
-    font-size: 12px;
+    font-size: 12px !important;
   }
 
   .fs-24{
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .m-t-10-minus {
@@ -51,21 +51,21 @@
   }
 
   .ms-lg-5 {
-    margin-left: 5px;
+    margin-left: 5px !important;
   }
 
   .line-h-45 {
-    line-height: 45px;
+    line-height: 45px !important;
   }
 
   .fs-10 {
-    font-size: 10px;
+    font-size: 10px !important;
   }
   
   .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   
   .fs-26 {
-    font-size: 16px;
+    font-size: 16px !important;
   }

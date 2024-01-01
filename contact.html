@@ -25,66 +25,93 @@
 
 <body>
     <header class="header-presentation">
-        <!-- NAVBAR -->
+      <!-- NAVBAR -->
         <nav class="navbar p-0 text-white navbar-expand-lg m-t-10-minus line-h-45">
             <div class="container-fluid">
+                <!-- logo -->
                 <a class="navbar-brand p-0 text-white" href="index.html">
                     <img src="assets/images/logo.png" alt="logo" class="logo w-75 mt-2">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+                <!-- menu burger -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon "></span>
                 </button>
+
                 <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
                     <div class="nav-i">
                         <ul class="navbar-nav">
+                            <!-- 1er btn LE STUDIO -->
                             <li class="nav-item">
                                 <a class="nav-link  text-white" aria-current="page" href="error.html">LE STUDIO</a>
                             </li>
+
+                            <!-- 2eme btn L'ÉQUIPE -->
                             <li class="nav-item">
                                 <a class="nav-link  text-white" aria-current="page" href="index.html">L'ÉQUIPE</a>
                             </li>
+
+                            <!-- 3eme btn LES ACTIVITÉS dropdown -->
                             <li class="nav-item dropdown">
                                 <a class="nav-link  text-white" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     LES ACTIVITÉS
                                 </a>
                                 <ul class="dropdown-menu bg-dark">
-                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">LE CYCLING</a>
-                                    </li>
-                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">LE TRAINING
-                                            FONCTIONNEL</a>
-                                    </li>
-                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">LE CROSSFIT</a>
-                                    </li>
-                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">PERSONNAL TRAINING
-                                         - COACH PERSONNEL</a></li>
+                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">
+                                        LE CYCLING
+                                    </a></li>
+                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">
+                                        LE TRAINING FONCTIONNEL
+                                    </a></li>
+                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">
+                                        LE CROSSFIT
+                                    </a></li>
+                                    <li><a class="dropdown-item bg-dark p-3" href="presentation.html">
+                                        PERSONNAL TRAINING - COACH PERSONNEL
+                                    </a></li>
                                 </ul>
                             </li>
+
+                            <!-- 4eme btn NOS OFFRES -->
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="error.html">NOS OFFRES</a>
                             </li>
+
+                            <!-- 5eme btn MÉDIAS -->
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="error.html">MÉDIAS</a>
                             </li>
+
+                            <!-- 6eme btn CONTACT -->
                             <li class="nav-item">
                                 <a class="nav-link text-white active" href="contact.html">CONTACT</a>
                             </li>
                         </ul>
                     </div>
+
+                    <!-- numero de telephone + icone -->
                     <div class="phone">
                         <i class="fa-solid fa-mobile-screen"> &nbsp; 05 59 47 84 18</i>
                     </div>
+
+                    <!-- social media -->
                     <div class="social">
                         <i class="fa-brands fa-square-facebook"></i>
                         <i class="fa-brands fa-instagram"></i>
                         <img src="assets/tripadvisor-18.png" alt="">
                     </div>
+
+                    <!-- langue (anglais) -->
                     <div class="lang text-center bg-gold m-t-10-minus text-black fs-10">EN</div>
                 </div>
             </div>
         </nav>
+
+
+
         <!-- Baniere -->
         <div class="container baniere  p-0 mb-4">
             <img src="assets/images/visuel/visuel_2.jpg" class="img-fluid position-absolute top-0 start-0 mb-4  "
@@ -95,19 +122,21 @@
     <!-- contact -->
     <div class="container row row-cols-lg-2 row-cols-1 m-auto justify-content-center my-5">
         <div class="contact-text col coordonnees-container">
+            <!-- titre -->
             <div class="title-contact">
                 <h4 class="fw-bold fs-24 m-0 p-0">NOS COORDONNÉES</h4>
                 <img src="assets/images/bg_titre.jpg" alt="">
             </div>
+
+            <!-- SECTION COORDONNEES -->
             <div class="coordonnes">
                 <h5>Studio Sport & Coaching</h5>
                 <p>
-                    01 Allée Marie Politzer <br />
+                    01 Allée Marie Politzer <br>
                     64200 Biarritz
                 </p>
                 <h5>Téléphone</h5>
-
-                05 59 47 84 18
+                <p>05 59 47 84 18</p>
                 <h5>Horaires</h5>
                 <p>
                     Du lundi au vendredi <br>
@@ -121,20 +150,21 @@
                     ou via ce formulaire
                 </p>
             </div>
-
         </div>
 
         <!-- formulaire de contact -->
         <div class="form-all">
+            <!-- titre -->
             <div class="titre-1 text-lg-start fw-bold ms-23">
                 <h2 class="fw-bold m-0 p-0 fs-24">FORMULAIRE DE CONTACT</h2>
                 <img src="assets/images/bg_titre.jpg" alt="">
             </div>
+            <!-- formulaire-->
             <form>
                 <div class="container form-group ">
-                    <!-- row 1 -->
+                    <!-- row 1 nom + prenom -->
                     <div class="row mt-4">
-                        <div class="col-md-7">
+                        <div class="col-md-7 mb-22">
                             <div class="form-group">
                                 <input type="text" placeholder="VOTRE NOM" id="InputNom"
                                     class="form-control  bg-form rounded-0 border-0 py-2" />
@@ -147,9 +177,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--row 2  -->
+                    <!--row 2 tel + email -->
                     <div class="row mt-4">
-                        <div class="col-md-5">
+                        <div class="col-md-5 mb-22">
                             <div class="form-group">
                                 <input type="tel" placeholder="VOTRE TÉLÉPHONE" id="InputTel"
                                     class="form-control  bg-form rounded-0  border-0 py-2" />
@@ -158,22 +188,29 @@
                         <div class="col-md-7">
                             <div class="form-group">
                                 <input type="email" class="form-control bg-form rounded-0 border-0 py-2"
-                                     placeholder="VOTRE EMAIL">
+                                    placeholder="VOTRE EMAIL">
                             </div>
                         </div>
                     </div>
-                    <!-- deux derniers -->
+                    <!-- SUJET + MESSAGE -->
                     <input type="text" placeholder="SUJET" id="InputSujet"
                         class="form-control mt-3 col  bg-form rounded-0 border-0 py-2" />
 
                     <textarea name="subject" placeholder="VOTRE MESSAGE" style="height:200px" id="InputMessage"
                         class="form-control mt-3 col  bg-form rounded-0 border-0 py-2"></textarea>
-                    <button type="button" class="btn bg-gold text-white rounded-0 fw-bold w-25 h4 mt-4">ENVOYER</button>
+
+                    <!-- btn envoyer -->
+                    <button type="button" class="btn bg-gold text-white rounded-0 fw-bold  h4 mt-4">
+                        ENVOYER
+                    </button>
+
                 </div>
             </form>
         </div>
     </div>
 
+
+    <!-- MAPS -->
     <section class="maps ">
         <iframe class="w-100 dark-mode"
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11582.415680687729!2d-1.5407329!3d43.4688656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd511535fdce1f53%3A0x38e8060826d77330!2sBurpees%20-%20CrossFit%20Biarritz!5e0!3m2!1sfr!2sfr!4v1702913368582!5m2!1sfr!2sfr"
@@ -181,9 +218,12 @@
     </section>
 
 
+    <!-- FOOTER -->
     <footer class=" text-center text-lg-start text-white" style="background-color: rgba(40,40,40,255)">
+        <!-- POSTS SOCIAL MEDIA -->
         <div class="position-relative">
             <div class=" m-0 p-0 row row-cols-lg-6 row-cols-md-4 row-cols-2 justify-content-center ">
+                <!-- 1er post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_2.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -194,6 +234,7 @@
                     </div>
                 </div>
 
+                <!-- 2eme post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_1.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -204,6 +245,7 @@
                     </div>
                 </div>
 
+                <!-- 3eme post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_3.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -214,6 +256,7 @@
                     </div>
                 </div>
 
+                <!-- 4eme post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_1.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -223,6 +266,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 5eme post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_2.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -232,6 +277,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 6eme post  -->
                 <div class="twitter-container position-relative border-0 p-0 col">
                     <img class="img-fluid image" src="assets/images/coach/coach_1.jpg" alt="">
                     <div class="middle top-50 start-50 translate-middle position-absolute text-center">
@@ -241,18 +288,21 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div class="@ text-center position-absolute top-50 start-50 translate-middle"> <button
-                    class="fw-bold p-2 px-4 border-0">@STUDIOBIARRITZ</button></div>
+            <!-- compte social media  -->
+            <div class="@ text-center position-absolute top-50 start-50 translate-middle">
+                <button class="fw-bold p-2 px-4 border-0">@STUDIOBIARRITZ</button>
+            </div>
         </div>
 
 
         <!-- Grid container -->
         <div class="container">
             <div class="row justify-content-center p-5">
+
+                <!--1er column à propos -->
                 <div class="col-sm-3">
-                    <div class="d-flex align-items-center ">
+                    <div class="d-flex align-items-center title-about-us ">
                         <img src="assets/images/logo_footer.png" alt="" class="d-inline w-10">
                         <p class="d-inline fw-bold ms-3">À PROPOS</p>
                     </div>
@@ -267,21 +317,26 @@
                     </p>
                 </div>
 
+                <!--2eme column STUDIO SPORT CORPORATE -->
                 <div class="col-sm-3">
                     <p class="fw-bold ms-32-minus">STUDIO SPORT CORPORATE</p>
                     <ul class=" list-unstyled position-relative">
                         <li><a href="error.html"
-                                class="footer_li position-relative text-decoration-none text-light text-hover">Crossfit
-                                Biarritz</a></li>
+                                class="footer_li position-relative text-decoration-none text-light text-hover fs-12">
+                                Crossfit Biarritz
+                            </a></li>
                         <li><a href="error.html"
-                                class="footer_li position-relative text-decoration-none text-light text-hover">Studio
-                                Center : créez votre studio</a></li>
+                                class="footer_li position-relative text-decoration-none text-light text-hover fs-12">
+                                Studio Center : créez votre studio
+                            </a></li>
                         <li><a href="error.html"
-                                class="footer_li position-relative text-decoration-none text-light text-hover">Devenir
-                                partenaire</a></li>
+                                class="footer_li position-relative text-decoration-none text-light text-hover fs-12">
+                                Devenir partenaire
+                            </a></li>
                     </ul>
                 </div>
 
+                <!--3eme column FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE -->
                 <div class="col-sm-4">
                     <p class="fw-bold">FITNESS, CROSSFIT ET TRAINING AU PAYS BASQUE</p>
                     <p class="fs-12"> <a href="error.html" class="link"> personnel de sport à Biarritz,</a> <a
@@ -298,16 +353,15 @@
             </div>
         </div>
         <!-- Copyright -->
-        <div class="text-center d-flex justify-content-center align-items-center h-20"
+        <div class="text-center d-flex justify-content-center align-items-center h-50px"
             style="background-color: rgb(0, 0, 0)">
             <p class="fs-10 m-0 text-end">
                 Un site crée par <br>
                 <span class="fw-bold">L'AGENCE 364 COM'</span>
             </p>
-            <img src="assets/images/364.png" class="w-4 ms-1" alt="">
+            <img src="assets/images/364.png" class="w-4 ms-1 img-footer" alt="">
         </div>
     </footer>
 </body>
-
 
 </html>
